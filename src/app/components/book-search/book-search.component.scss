@@ -1,9 +1,8 @@
+@use '../../../theme' as theme;
+
 .search-form {
   display: flex;
   flex-direction: column;
-  padding: 1em;
-  border: 1em solid coral;
-  background: orange;
 }
 
 .search-form > button {
@@ -24,5 +23,4 @@
 .book-ids {
   display: flex;
   flex-direction: column;
-  background: green;
 }

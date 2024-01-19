@@ -1,18 +1,23 @@
-<form [formGroup]="inputForm" (ngSubmit)="onSubmit(inputForm)" class="search-form">
-  <label for="bookId">Search Book ID: </label>
-  <input id="bookId" type="text" formControlName="bookId">
-  <button type="sumbit">Search</button>
-</form>
+<div class="panel">
+  <form [formGroup]="inputForm" (ngSubmit)="onSubmit(inputForm)" class="search-form">
+    <label for="bookId">Search Book ID: </label>
+    <input id="bookId" type="text" formControlName="bookId">
+    <button type="sumbit">Search</button>
+  </form>
+</div>
 
-<section *ngIf="currentBook" class="display-book">
-  <h3 class="book-title">{{currentBook.title}}</h3>
-  <h3 class="book-price">${{currentBook.price / 100}}</h3>
-</section>
+<div class="panel">
+  <section *ngIf="currentBook" class="display-book">
+    <h3 class="book-title">{{currentBook.title}}</h3>
+    <h3 class="book-price">${{currentBook.price / 100}}</h3>
+  </section>
+</div>
 
-<section class="book-ids">
-  <h5>Available Book IDs:</h5>
-  <span *ngFor="let id of bookIds">
+<div class="panel">
+  <section class="book-ids">
+    <h5>Available Book IDs:</h5>
+    <span *ngFor="let id of bookIds">
     {{id}}
   </span>
-</section>
-
+  </section>
+</div>

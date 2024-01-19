@@ -82,3 +82,13 @@ app-main {
 app-main {
   display: block; // defaults to 'inline'
 }
+
+// TODO - this would be great to move to its own component
+// See <panel /> comment in main.component.scss
+.panel {
+  background-color: theme.$panel-background-color;
+  box-shadow: theme.$panel-box-shadow;
+  border-radius: theme.$default-border-radius;
+  margin-bottom: theme.$spacer-large;
+  padding: theme.$spacer-medium;
+}

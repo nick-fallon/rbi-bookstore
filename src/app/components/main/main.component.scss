@@ -21,8 +21,15 @@
 
   h1 {
     display: inline;
-    margin-left: theme.$spacer-large;
     font-size: 1.4em;
+    line-height: .7em;
+  }
+
+  .stacked-branding {
+    margin-left: theme.$spacer-large;
+    small {
+      display: block;
+    }
   }
 }
 
@@ -31,6 +38,7 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  padding: theme.$spacer-large;
 }
 
 .content-container {
@@ -48,7 +56,7 @@
   app-book-search,
   app-cart {
     flex: 1; // take an equal amount of column space when horizontal
-    padding: theme.$spacer-large;
-    box-shadow: theme.$panel-box-shadow;
+    padding: theme.$spacer-medium;
+    height: fit-content;
   }
 }
