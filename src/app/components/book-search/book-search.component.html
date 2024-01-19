@@ -6,12 +6,16 @@
   </form>
 </div>
 
-<div class="panel">
-  <section *ngIf="currentBook" class="display-book">
-    <h3 class="book-title">{{currentBook.title}}</h3>
-    <h3 class="book-price">${{currentBook.price / 100}}</h3>
-  </section>
-</div>
+
+<section *ngIf="currentBook">
+  <div class="panel">
+    <div class="display-book">
+      <h3 class="book-title">{{currentBook.title}}</h3>
+      <h3 class="book-price">${{currentBook.price / 100}}</h3>
+    </div>
+  </div>
+</section>
+
 
 <div class="panel">
   <section class="book-ids">
