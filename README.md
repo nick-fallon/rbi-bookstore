@@ -1,6 +1,13 @@
-# Bookstore
+# RBI Bookstore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+
+The Github repository for this project can be found [here](https://github.com/nick-fallon/rbi-bookstore).
+
+## Installation
+`Node.js` version `^18.13.0 || ^20.9.0` is required to install and run this project.
+
+Run `npm install`, then run `npm run start`.
 
 ## Development server
 
