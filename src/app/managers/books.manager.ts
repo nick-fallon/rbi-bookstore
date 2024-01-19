@@ -21,8 +21,8 @@ export class BooksManager {
   public setBooks(): void {
     this.booksService.getBooks().subscribe(books => {
       let bookMap: any = {};
-      books.map((book: { id: string }) => {
-        bookMap[book.id] = book;
+      books.map((book: { isbn: string }) => {
+        bookMap[book.isbn] = book;
       })
       this.store.dispatch(setBooks({books: bookMap}))
     })

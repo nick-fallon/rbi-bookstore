@@ -1,10 +1,18 @@
-<body>
-  <h1>Redwood International Bookstore</h1>
-  <div class="main-container">
-    <div class="content-container">
-      <app-book-search></app-book-search>
-      <app-cart></app-cart>
-    </div>
+<!--TODO – refactor the outer container elements into a new <page-layout /> component-->
+
+<div class="top-header">
+  <img class="brand-logo" src="/assets/images/rib-logo-full-DALLE.jpeg" width="50" height="50" />
+  <div class="stacked-branding">
+    <h1>Redwood International Bookstore</h1>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="content-container">
+    <app-book-search></app-book-search>
+    <app-cart></app-cart>
+  </div>
+  <div class="panel">
     <app-receipt></app-receipt>
   </div>
-</body>
+</div>

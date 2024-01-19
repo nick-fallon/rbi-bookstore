@@ -1,16 +1,62 @@
-body {
-  margin-left: 2em;
-  margin-right: 2em;
+@use '../../../theme' as theme;
+
+// .top-header should be refactored into a dedicated component
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: theme.$top-header-background-color;
+  color: theme.$top-header-text-color;
+  padding: theme.$spacer-medium theme.$spacer-x-large;
+
+  @media (min-width: theme.$breakpoint-tablet) {
+    text-align: left;
+  }
+
+  .brand-logo {
+    display: inline-block;
+    border-radius: theme.$default-border-radius;
+  }
+
+  h1 {
+    display: inline;
+    font-size: 1.4em;
+    line-height: .7em;
+  }
+
+  .stacked-branding {
+    margin-left: theme.$spacer-large;
+    small {
+      display: block;
+    }
+  }
 }
 
 .main-container {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  padding: theme.$spacer-large;
 }
 
 .content-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+
+  @media (min-width: theme.$breakpoint-tablet) {
+    flex-direction: row;
+  }
+
+  // TODO – this would be great to refactor out into a <panel /> or
+  // <widget /> component
+  app-book-search,
+  app-cart {
+    flex: 1; // take an equal amount of column space when horizontal
+    padding: theme.$spacer-medium;
+    height: fit-content;
+  }
 }

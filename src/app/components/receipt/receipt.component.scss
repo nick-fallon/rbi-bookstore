@@ -1,12 +1,15 @@
 .receipt-body {
   width: 20em;
   padding: 1em;
-  border: 1em solid burlywood;
-  margin-top: 2em;
+  //margin-top: 2em;
 }
 
-.receipt-list-item {
+//.receipt-header {
+//  margin-top: 0 !important;
+//}
+
+.receipt-item {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }

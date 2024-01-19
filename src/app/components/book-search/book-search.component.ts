@@ -20,22 +20,22 @@ export class BookSearchComponent implements OnInit{
 
   inputForm: FormGroup;
   currentBook: IBook;
-  bookIds: string[] = [
-    'f75f6905-4c59-4733-a953-a09ddac73153',
-    '853c5a34-d797-42c8-a73d-b4002d3583d3',
-    'a5af0776-a0f5-4814-b174-e0225892c130',
-    'bb5dac26-5ad3-4095-b35a-ea1bb9f8e804',
-    '4da6660b-a6b1-441c-baef-b719187ff98d'
+  bookIsbns: string[] = [
+    '9781466853447',
+    '9780593135211',
+    '9780007492190',
+    '9780553900347',
+    '9781631066443'
   ]
 
   ngOnInit() {
     this.inputForm = new FormGroup({
-      bookId: new FormControl('')
+      bookIsbn: new FormControl('')
     })
   }
 
   onSubmit(form: FormGroup) {
-    const bookId = form.value.bookId;
+    const bookId = form.value.bookIsbn;
     if (!bookId) {
       // handle no input here – maybe show a message indicating it's required to submit
       console.log('Book search submitted with no input.')

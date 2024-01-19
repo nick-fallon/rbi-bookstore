@@ -1,9 +1,8 @@
+@use '../../../theme' as theme;
+
 .search-form {
   display: flex;
   flex-direction: column;
-  width: 20em;
-  padding: 1em;
-  border: 1em solid coral;
 }
 
 .search-form > button {
@@ -21,7 +20,7 @@
   padding: 2em;
 }
 
-.book-ids {
+.book-isbns {
   display: flex;
   flex-direction: column;
 }
