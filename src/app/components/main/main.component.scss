@@ -1,6 +1,6 @@
 @use '../../../theme' as theme;
 
-// This is perfect for refactoring into its own separate component
+// .top-header should be refactored into a dedicated component
 .top-header {
   display: flex;
   align-items: center;
@@ -43,8 +43,12 @@
     flex-direction: row;
   }
 
+  // TODO – this would be great to refactor out into a <panel /> or
+  // <widget /> component
   app-book-search,
   app-cart {
-    flex: 1; // tells each to take an equal amount of column space
+    flex: 1; // take an equal amount of column space when horizontal
+    padding: theme.$spacer-large;
+    box-shadow: theme.$panel-box-shadow;
   }
 }
