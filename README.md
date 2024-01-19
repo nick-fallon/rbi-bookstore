@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 The Github repository for this project can be found [here](https://github.com/nick-fallon/rbi-bookstore).
 
+In order to use the application, search for any of the ISBNs provided in the list on the page. This will add it to the cart. When the desired books have been added to the cart, click one of the payment type options and click the `Checkout` button. This will populate a receipt for the transaction.
+
 ## Installation
 `Node.js` version `^18.13.0 || ^20.9.0` is required to install and run this project.
 
