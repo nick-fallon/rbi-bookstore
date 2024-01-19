@@ -1,0 +1,32 @@
+<div class="cart-container">
+  <h4 class="cart-header">Cart</h4>
+  <ul>
+    <li *ngFor="let item of cartItems" class="cart-item">
+      <span>{{item.title}}</span>
+      <span>${{item.price / 100}}</span>
+    </li>
+  </ul>
+  <div class="total-price">
+    <p style="margin-right: 1em">
+      Total:
+    </p>
+    <p>
+      ${{totalPrice / 100}}
+    </p>
+  </div>
+  <form [formGroup]="paymentForm" (ngSubmit)="onSubmit(paymentForm)" class="checkout">
+    <label>
+      <input type="radio" formControlName="payment" value="Cash">
+      <span>Cash</span>
+    </label>
+    <label>
+      <input type="radio" formControlName="payment" value="Credit Card">
+      <span>Credit Card</span>
+    </label>
+    <label>
+      <input type="radio" formControlName="payment" value="Mobile">
+      <span>Mobile</span>
+    </label>
+    <button type="submit" [disabled]="disableCheckout">Checkout</button>
+  </form>
+</div>

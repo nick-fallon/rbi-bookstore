@@ -1,0 +1,47 @@
+[
+  {
+    "id": "f75f6905-4c59-4733-a953-a09ddac73153",
+    "title": "Test Book 1",
+    "author": "John Smith",
+    "language": "English",
+    "country": "USA",
+    "price": 2099,
+    "quantity": 3
+  },
+  {
+    "id": "853c5a34-d797-42c8-a73d-b4002d3583d3",
+    "title": "Test Book 2",
+    "author": "Robbie Brown",
+    "language": "English",
+    "country": "USA",
+    "price": 1549,
+    "quantity": 1
+  },
+  {
+    "id": "a5af0776-a0f5-4814-b174-e0225892c130",
+    "title": "Test Book Longer Title to Test 12345",
+    "author": "Paulo Coelho",
+    "language": "Portuguese",
+    "country": "Brazil",
+    "price": 1099,
+    "quantity": 115
+  },
+  {
+    "id": "bb5dac26-5ad3-4095-b35a-ea1bb9f8e804",
+    "title": "Test Book 4",
+    "author": "Annie Williams",
+    "language": "English",
+    "country": "Australia",
+    "price": 1289,
+    "quantity": 0
+  },
+  {
+    "id": "4da6660b-a6b1-441c-baef-b719187ff98d",
+    "title": "Test Book 5",
+    "author": "Lisa Turner",
+    "language": "English",
+    "country": "USA",
+    "price": 10199,
+    "quantity": 12
+  }
+]

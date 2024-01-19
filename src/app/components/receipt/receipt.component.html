@@ -1,0 +1,10 @@
+<div *ngIf="checkout" class="receipt-body">
+  <ul *ngFor="let item of checkout.cartItems" style="list-style: none; padding: 0">
+    <li class="receipt-list-item">
+      <span style="margin-right: 1em">{{item.title}}</span>
+      <span>${{item.price / 100}}</span>
+    </li>
+  </ul>
+  <p>Total: ${{checkout.total / 100}}</p>
+  <p>Payment Method: {{checkout.payment}}</p>
+</div>

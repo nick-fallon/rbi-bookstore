@@ -1,0 +1,32 @@
+.cart-container {
+  width: 20em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1em solid cadetblue;
+}
+
+.cart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0 !important;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+}
