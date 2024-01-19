@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
+
+
 }
 
 .cart-header {
@@ -29,4 +31,8 @@
 .checkout {
   display: flex;
   justify-content: space-between;
+}
+
+.payment-radio {
+  margin-right: theme.$spacer-small;
 }

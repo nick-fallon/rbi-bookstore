@@ -17,15 +17,15 @@
     </div>
     <form [formGroup]="paymentForm" (ngSubmit)="onSubmit(paymentForm)" class="checkout">
       <label>
-        <input type="radio" formControlName="payment" value="Cash">
+        <input type="radio" formControlName="payment" value="Cash" class="payment-radio">
         <span>Cash</span>
       </label>
       <label>
-        <input type="radio" formControlName="payment" value="Credit Card">
+        <input type="radio" formControlName="payment" value="Credit Card" class="payment-radio">
         <span>Credit Card</span>
       </label>
       <label>
-        <input type="radio" formControlName="payment" value="Mobile">
+        <input type="radio" formControlName="payment" value="Mobile" class="payment-radio">
         <span>Mobile</span>
       </label>
       <button type="submit" [disabled]="disableCheckout">Checkout</button>
