@@ -1,16 +1,26 @@
-body {
-  margin-left: 2em;
-  margin-right: 2em;
-}
+@use '../../../variables.scss' as common;
 
 .main-container {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  background: blue;
 }
 
 .content-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+  background: purple;
+  height: 100%;
+
+  @media (min-width: common.$tablet-breakpoint) {
+    flex-direction: row;
+  }
+
+  app-book-search,
+  app-cart {
+    flex: 1;
+  }
 }

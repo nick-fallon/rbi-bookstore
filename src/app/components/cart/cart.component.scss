@@ -1,11 +1,11 @@
 .cart-container {
-  width: 20em;
-  height: 100%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
   border: 1em solid cadetblue;
+  background: green;
 }
 
 .cart-header {
